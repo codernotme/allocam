@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+html{
+    height: 100%;
+    font-family: 'Roboto', 'Lucida Sans', 'Lucida Grande', sans-serif;
+}
+body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    flex-basis: 10%;
+    box-shadow: 0px 0px 5px gray;
+}
+
+nav{
+    height: 100%;
+    padding: 0 10px;
+    background-color: rgb(167, 167, 167);
+}
+
+.container{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    max-height: 50px;
+}
+
+.online-status{
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+}
+
+main{
+    height: 100%;
+    margin: 10px;
+    padding: 0;
+    flex-basis: 90%;
+}
+
+.main-container{
+    padding: 20px 100px;
+}
+
+.monitored-text{
+    padding: 5px;
+    background-color: aquamarine;
+    justify-content: center;
+    flex-direction: column-reverse;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.start-chat{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.action-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+button.action-button{
+    background: -moz-linear-gradient(top, #7db9e8 3%, #599bb3 100%);
+    background: -webkit-linear-gradient(top, #7db9e8 3%, #599bb3 100%);
+    background: linear-gradient(to bottom, #7db9e8 3%, #599bb3 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7db9e8', endColorstr='#599bb3', GradientType=0);
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 18px;
+}
+
+.action-button a{
+    text-decoration: none;
+    color: white;
+}
+
+/* ....................Video chat start here..................... */
+.video_chat_main_container{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    flex-basis: 90%;
+    display: flex;
+}
+
+.video_chat_container{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.video-tag-container{
+    margin-top: 10px;
+    margin-right: 5px;
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.videos{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.video-player{
+    flex-basis: 50%;
+}
+
+video{
+    max-width: 100%;
+    max-height: 100%;
+    background-color: rgb(63, 62, 62);
+}
+
+/*chat area*/
+
+.chat-container{
+    flex-basis: 70%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.chat-text-container{
+    flex-basis: 80%;
+}
+
+.next-chat-container{
+    flex-basis: 20%;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.next-chat{
+    display: flex;
+    flex-basis: 15%;
+    padding: 10px;
+    border-radius: 2px ;
+    box-shadow: 0 0 5px gray;
+    margin: 5px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    pointer-events: none;
+}
+
+.type-message{
+    flex-basis: 70%;
+    padding: 10px;
+    border-radius: 2px;
+    box-shadow: 0 0 5px gray;
+    height: auto;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#msg-input{
+    width: 99%;
+    height: 91%;
+    outline: none;
+    border: 1px solid lightgray;
+    padding: 5px;
+}
+
+.msg-send-button{
+    display: flex;
+    flex-basis: 15%;
+    padding: 10px;
+    border-radius: 2px ;
+    box-shadow: 0 0 5px gray;
+    margin: 5px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    pointer-events: none;
+}
