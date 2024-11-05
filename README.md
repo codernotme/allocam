@@ -1,83 +1,120 @@
-# Allocam - Omegle Substitute
+# 📸 Allocam
 
-Allocam is a real-time video chat platform designed as a substitute for Omegle, specifically tailored for users. It provides a seamless and secure way for users to connect with strangers through video conversations.
+[![Allocam Site](https://img.shields.io/badge/Visit-Allocam-blue?style=for-the-badge&logo=vercel)](http://allocam.vercel.app/)  
+[Allocam](http://allocam.vercel.app/) is a real-time camera and streaming application designed for secure and responsive live video interactions. Built with **Vite**, **Node.js**, and **Socket.IO**, Allocam ensures minimal delay and a user-friendly interface.
 
-## Features
+---
 
-- **Random Video Chats:** Connect with random users from the allotalk.in community through live video chats.
-- **Anonymous Interaction:** Maintain your privacy by engaging in anonymous conversations without revealing personal information.
-- **Filter Options:** Customize your experience by applying filters based on interests, language, or region to match with like-minded individuals.
-- **Moderation Controls:** Enjoy a safe environment with built-in moderation features to prevent inappropriate content and behavior.
-- **Responsive Design:** Allocam is designed to work seamlessly across various devices, ensuring a user-friendly experience on desktops, tablets, and smartphones.
+![Allocam Preview](image-prev.png) <!-- Replace with actual preview image URL -->
 
-## Getting Started
+---
+
+## 🔗 Table of Contents
+
+- [Features](#features)
+- [Demo](#demo)
+- [Tech Stack](#tech-stack)
+- [Project Structure](#project-structure)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+
+## ✨ Features
+
+- 📹 **Real-time Video Streaming**: Low-latency streaming using Socket.IO.
+- 🔒 **Privacy-Focused**: Secure and private data handling.
+- ⚡ **Fast and Responsive**: Optimized frontend performance with Vite.
+- 🧑‍🤝‍🧑 **User-Friendly Interface**: Simple and intuitive design.
+- 🌐 **Cross-Platform Support**: Works seamlessly on various devices and browsers.
+
+## 🎥 Demo
+
+Try out the live demo: [Allocam Demo](http://allocam.vercel.app/)
+
+## 🛠 Tech Stack
+
+| Frontend | Backend | Deployment |
+| --- | --- | --- |
+| ![Vite](https://skillicons.dev/icons?i=vite) ![React](https://skillicons.dev/icons?i=react) ![JavaScript](https://skillicons.dev/icons?i=js) ![CSS](https://skillicons.dev/icons?i=css) | ![Node.js](https://skillicons.dev/icons?i=nodejs) ![Express](https://skillicons.dev/icons?i=express) | ![Vercel](https://skillicons.dev/icons?i=vercel) |
+
+---
+## 🗂 Project Structure
+
+```
+allocam/
+├── client/       # Frontend (Vite + React)
+└── server/       # Backend (Node.js + Express + Socket.IO)
+```
+
+## 🚀 Getting Started
 
 ### Prerequisites
 
-- Node.js
-- npm (Node Package Manager)
-- MongoDB
+- Ensure you have [Node.js](https://nodejs.org/) and npm installed
 
 ### Installation
 
-1. Clone the repository:
-
+1. **Clone the repository**
    ```bash
    git clone https://github.com/codernotme/allocam.git
    cd allocam
    ```
-2. Install dependencies:
+
+2. **Install Dependencies**
+   - Frontend:
+     ```bash
+     cd client
+     npm install
+     ```
+   - Backend:
+     ```bash
+     cd ../server
+     npm install
+     ```
+
+### Running the Application
+
+1. **Start the Backend Server**
    ```bash
-   npm install
+   cd server
+   node index.js
    ```
-### Setup MongoDB
-1. Install MongoDB on your system if you haven't already.
-2. Start MongoDB service.
-3. Ensure MongoDB is running on the default port (27017).
+   The server runs on `http://localhost:3000` by default.
 
-### Running the Server
-1. Start the server:
+2. **Start the Frontend Development Server**
    ```bash
-   npm start
+   cd ../client
+   npm run dev
    ```
-2. The server will be running at `http://localhost:8080`.
+   Access the frontend at `http://localhost:5173`.
 
-### Usage
-1. Open your web browser and navigate to `http://localhost:8080`.
-2. Start a video chat session by clicking on the appropriate buttons/options provided on the website.
+### Configuration
 
-### Server Configuration
-The server runs on port 8080 by default. You can change this by modifying the PORT variable in server.js file.
+- Set the backend URL in the frontend code (if needed) to `http://localhost:3000`.
 
-#### Tech Stack
-1. Node.js
-2. Express.js
-3. MongoDB
-4. Mongoose
-5. WebRTC
-6. Socket.IO
+## 📖 Usage
 
-### Folder Structure
-```csharp
-Allocam/
-│
-├── assets/
-│   ├── css/
-│   ├── img/
-│   └── js/
-│
-├── server/
-│   ├── controller/
-│   ├── database/
-│   ├── model/
-│   ├── routes/
-│   ├── services/
-│   └── views/
-│
-├── server.js
-│
-└── readme.md
-```
+1. Open the app in your browser and grant camera permissions.
+2. Use the UI to start/stop streaming and adjust settings as desired.
+3. Explore the interface for real-time interaction features.
 
-### License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+## 🤝 Contributing
+
+Contributions are welcome! Here’s how you can get involved:
+
+1. Fork the repository.
+2. Create a feature branch (`git checkout -b feature/YourFeature`).
+3. Commit your changes (`git commit -m 'Add new feature'`).
+4. Push to your branch (`git push origin feature/YourFeature`).
+5. Open a Pull Request on GitHub.
+
+Check the [issues page](https://github.com/codernotme/allocam/issues) for any open issues or to report new ones.
+
+## 📄 License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
+
+---
+
+Thank you for using Allocam! If you enjoy this project, please consider giving it a star 🌟
