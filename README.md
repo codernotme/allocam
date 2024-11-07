@@ -1,4 +1,4 @@
-# 📸 Allocam
+# 📸 Allocam (currently working / not in production)
 
 [![Allocam Site](https://img.shields.io/badge/Visit-Allocam-blue?style=for-the-badge&logo=vercel)](http://allocam.vercel.app/)  
 [Allocam](http://allocam.vercel.app/) is a real-time camera and streaming application designed for secure and responsive live video interactions. Built with **Vite**, **Node.js**, and **Socket.IO**, Allocam ensures minimal delay and a user-friendly interface.
